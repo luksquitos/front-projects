@@ -104,6 +104,6 @@ body {
 
 footer {
     font-weight: 400;
-    display: flex;
-    justify-content: center;
+    text-align: center;
+    padding: 24px;
 }

@@ -6,20 +6,46 @@
     box-sizing: border-box;
 }
 
+:root {
+    --profile-pic-border-color: rgba(255, 255, 255, 0.5);
+
+    --background-image: url(./assets/bg-mobile-dark.jpg);
+    --text-color: white;
+    
+    --bg-color-link: rgba(255, 255, 255, 0.1);
+    --bg-border-color-link: rgba(255, 255, 255, 0.5);
+    --bg-color-link-hover: rgba(255, 255, 255, 0.05); 
+    --bg-border-color-link-hover: #FFFFFF;
+    
+    --social-links-hover-color: rgba(255, 255, 255, 0.2);
+    
+}
+
+/* .light {
+    --profile-pic-border-color: rgba(0, 0, 0, 0.5);
+    
+    --background-image: url(./assets/bg-mobile-light.png);
+    --text-color: black;
+    
+    --bg-color-link: rgba(0, 0, 0, 0.05);
+    --bg-border-color-link: rgba(0, 0, 0, 0.5);
+    --bg-color-link-hover: rgba(0, 0, 0, 0.02); 
+    --bg-border-color-link-hover: black;
+    
+    --social-links-hover-color: rgba(0, 0, 0, 0.1);
+} */
+
 body * {
-    color: white;
+    color: var(--text-color);
     font-family: 'Inter', sans-serif;
 }
 
 
 body {
-    background-image: url("assets/bg-mobile-dark.jpg");
+    background-image: var(--background-image);
     background-repeat: no-repeat;
     background-position: top bottom;
     background-size: cover;
-
-    /* display: flex;
-    justify-content: center;*/
 } 
 
 #container {
@@ -37,8 +63,8 @@ body {
     padding: 24px;
     text-align: center;
 }
-
 #profile-pic {
+    border: 2px solid var(--profile-pic-border-color);
     border-radius: 50%;
     width: 112px;
 }
@@ -65,16 +91,14 @@ body {
     padding: 16px 24px;
     display: flex;
     justify-content: center;
-    background-color: rgba(255, 255, 255, 0.1);
-    border: 1px solid rgba(255, 255, 255, 0.5);
+    background-color: var(--bg-color-link);
+    border: 1px solid var(--bg-border-color-link);
     border-radius: 8px;
     transition: background 0.4s;
 }
-
 #links li:hover {
-    background-color: rgba(255, 255, 255, 0.05);
-    border: 1.5px solid #FFFFFF;
-
+    background-color: var(--bg-color-link-hover);
+    border: 1.5px solid var(--bg-border-color-link-hover);
 }
 
 
@@ -98,7 +122,7 @@ body {
     border-radius: 100%;
 }
 #social-links ion-icon:hover {
-    background: rgba(255, 255, 255, 0.2);
+    background: var(--social-links-hover-color)
 }
 
 

@@ -11,6 +11,8 @@
 
     --background-image: url(./assets/bg-mobile-dark.jpg);
     --text-color: white;
+
+    --switch-image: url("./assets/moonstars.svg");
     
     --bg-color-link: rgba(255, 255, 255, 0.1);
     --bg-border-color-link: rgba(255, 255, 255, 0.5);
@@ -21,11 +23,13 @@
     
 }
 
-/* .light {
+.light {
     --profile-pic-border-color: rgba(0, 0, 0, 0.5);
     
     --background-image: url(./assets/bg-mobile-light.png);
     --text-color: black;
+    
+    --switch-image: url("./assets/Sun.svg");
     
     --bg-color-link: rgba(0, 0, 0, 0.05);
     --bg-border-color-link: rgba(0, 0, 0, 0.5);
@@ -33,7 +37,7 @@
     --bg-border-color-link-hover: black;
     
     --social-links-hover-color: rgba(0, 0, 0, 0.1);
-} */
+}
 
 body * {
     color: var(--text-color);
@@ -50,7 +54,6 @@ body {
 
 #container {
     margin: auto;
-    /* border: 2px solid white; */
     width: 360px;
     display: flex;
     flex-direction: column;
@@ -63,6 +66,7 @@ body {
     padding: 24px;
     text-align: center;
 }
+
 #profile-pic {
     border: 2px solid var(--profile-pic-border-color);
     border-radius: 50%;
@@ -71,9 +75,35 @@ body {
 
 #profile p {
     margin-top: 8px;
-    color: white;
+    color: var(--text-color);
     font-weight: 400;
+    padding: 8px;
 }
+
+/* switch */
+
+#switch {
+    display: flex;
+    justify-content: center;
+}
+
+#switch button {
+    /* background-color: #FFFFFF;
+    background-image: var(--switch-image);
+    background-repeat: no-repeat;
+    background-position: center; */
+    background: white var(--switch-image) no-repeat center;
+    padding: 8px;
+    height: 32px;
+    width: 32px;
+    border: 0px;
+    border-radius: 50%;
+}
+
+/* isso aqui não funciona. não é assim */
+/* #switch button:hover {
+    border: 8px solid rgba(255, 255, 255, 0.2);
+} */
 
 
 /* links */

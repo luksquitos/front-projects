@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="light">
+<html lang="en">
 <head>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,7 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
 </head>
-<body>
+<body class="dark">
     <div id="container">
         <div id="profile">
             <img style="width: 200px;" id="profile-pic" src="./assets/profile.jpg" alt="#">
@@ -18,7 +18,7 @@
         </div>
         <div id="switch">
             <div id="switch-container">
-                <button></button>
+                <button onclick="changeThemeMode()"></button>
                 <span></span>
             </div>
         </div>
@@ -40,5 +40,6 @@
     </div>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="./script.js"></script>
 </body>
 </html>

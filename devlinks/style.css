@@ -119,6 +119,7 @@ body {
     left: 0;
     z-index: 1;
     transform: var(--button-x-position);
+    transition: 200ms;
 }
 
 
@@ -130,11 +131,6 @@ body {
     border-radius: 9999px;
     position: relative;
 }
-
-/* isso aqui não funciona. não é assim */
-/* #switch button: {
-    border: 8px solid rgba(255, 255, 255, 0.2);
-} */
 
 
 /* links */
